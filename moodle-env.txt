@@ -1,0 +1,5 @@
+MYSQL_DB=moodle
+MYSQL_HOST=mdb
+MYSQL_USER=root
+MYSQL_PASSWORD=moodle
+DBTYPE=mariadb

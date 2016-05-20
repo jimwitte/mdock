@@ -1,0 +1,24 @@
+version: '2'
+services:
+  mweb:
+    image: jimwitte/moodle-dev:1.0
+    env_file: moodle-env.txt
+    ports:
+     - "80:80"
+    volumes:
+     - ./app:/var/www/html
+     - mweb-data:/var/www/moodledata
+    depends_on:
+      - mdb
+  mdb:
+      image: mariadb:latest
+      env_file: mysql-env.txt
+      expose: 
+       - "3306"
+      ports:
+       - "3306:3306"
+      volumes:
+       - mdb-data:/var/lib/mysql
+volumes:
+  mdb-data:
+  mweb-data:
