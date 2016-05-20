@@ -4,7 +4,6 @@ MAINTAINER Jim Witte <jwitte@illinois.edu>
 
 EXPOSE 80 443
 
-COPY app /var/www/html
 COPY required-packages.txt .
 
 # Let the container know that there is no tty

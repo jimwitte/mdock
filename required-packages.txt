@@ -11,6 +11,7 @@ php5-gd
 php5-intl 
 php5-memcached
 php5-mysql
+php5-tidy
 php5-xmlrpc 
 php5-xsl
 postfix
